@@ -1,0 +1,90 @@
+# General Node.js/Express.js Project Ignores
+
+# Dependencies
+node_modules/
+package-lock.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs and temporary files
+logs/
+*.log
+*.stackdump
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Environment variables and sensitive configuration
+.env
+.env.*
+*.env.local
+*.env.development
+*.env.staging
+*.env.production
+secrets.json # If you have a dedicated secrets file
+
+# Build output (if you have a build process)
+dist/
+build/
+public/build/ # If you build assets into your public folder
+
+# Temporary and cache files
+tmp/
+temp/
+.tmp/
+.temp/
+cache/
+.cache/
+
+# Editor and IDE specific files
+.idea/         # IntelliJ IDEA
+.vscode/       # Visual Studio Code
+.sublime-project
+.sublime-workspace
+.settings/     # Eclipse or similar
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp           # Vim swap files
+*~              # Emacs and other editor backup files
+*.bak
+
+# Operating System and System files
+.DS_Store      # macOS Finder
+Thumbs.db       # Windows Thumbnail Cache
+ehthumbs.db     # Windows Extended Thumbnail Cache
+desktop.ini     # Windows folder customization
+._*             # macOS extended attributes
+Icon?           # macOS custom icons
+*.sym           # Symbol files (debuggers)
+
+# Optional: If you use a database (consider if these should be ignored based on your setup)
+data/          # Or database specific folders like mongodb-data/, postgresql-data/ etc.
+*.sqlite
+*.db
+*.sql
+
+# Optional: If you are using Docker (depends on your setup)
+docker-compose.override.yml # Often contains local overrides, might not want to commit
+Dockerfile.dev             # Development specific Dockerfile
+.dockerenv
+
+# Optional: If you are using a test coverage tool
+coverage/
+lcov-report/
+
+# Optional: Specific project files you might want to ignore (customize as needed)
+config/local.js  # Example: local development configuration override
+
+# Ignore files that are only relevant for your local machine and not the project
+.eslintcache
+.jest-cache
+.nyc_output
+.parcel-cache
+.vite-metadata
