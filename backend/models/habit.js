@@ -30,6 +30,11 @@ const habitSchema = new mongoose.Schema({
     },
     finishedAt: {
         type: Date
+    },
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
     }
 });
 
