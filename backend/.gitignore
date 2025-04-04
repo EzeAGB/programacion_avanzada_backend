@@ -88,3 +88,4 @@ config/local.js  # Example: local development configuration override
 .nyc_output
 .parcel-cache
 .vite-metadata
+.vercel
